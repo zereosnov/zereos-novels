@@ -1,110 +1,152 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>الموعود - الفصل الأول</title>
+  <meta charset="UTF-8">
+  <title>الفصل 1 - رواية الموعود</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f9f9f9;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to bottom, #f0f4f8, #e3f2fd);
+      color: #222;
       margin: 0;
       padding: 0;
-      color: #222;
-      line-height: 1.8;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideDown {
+      from {transform: translateY(-20px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
     }
 
     header {
-      background-color: #ff5252;
+      background: linear-gradient(to right, #0d47a1, #b71c1c);
       color: white;
-      padding: 30px 20px;
+      padding: 20px 10px;
       text-align: center;
+      position: relative;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 26px;
+    .logo-text {
+      font-size: 32px;
+      letter-spacing: 6px;
+      font-weight: bold;
+      animation: slideDown 1s ease;
     }
 
-    .nav-link {
+    .logo-text span:nth-child(1),
+    .logo-text span:nth-child(3) {
+      color: #f44336;
+    }
+
+    .logo-text span:nth-child(2),
+    .logo-text span:nth-child(4) {
+      color: #2196f3;
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #eee;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      font-size: 18px;
+      line-height: 2;
+      transition: font-size 0.3s ease;
+    }
+
+    h2 {
       text-align: center;
-      margin: 20px 0;
+      color: #b71c1c;
     }
 
-    .nav-link a {
-      display: inline-block;
-      padding: 10px 20px;
+    .nav-buttons {
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    .nav-buttons a,
+    .nav-buttons button {
       background-color: #1565c0;
       color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
       border-radius: 6px;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-block;
+      transition: background 0.3s ease;
     }
 
-    .nav-link a:hover {
+    .nav-buttons a:hover,
+    .nav-buttons button:hover {
       background-color: #0d47a1;
-    }
-
-    .chapter {
-      max-width: 800px;
-      margin: 30px auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.08);
-    }
-
-    .chapter h2 {
-      color: #d32f2f;
-      margin-bottom: 20px;
-    }
-
-    .chapter p {
-      margin-bottom: 20px;
     }
 
     footer {
-      background-color: #0d47a1;
-      text-align: center;
+      background-color: #263238;
       color: white;
+      text-align: center;
       padding: 15px;
       font-size: 14px;
-      margin-top: 50px;
     }
   </style>
 </head>
 <body>
 
+  <!-- الشعار -->
   <header>
-    <h1>📘 الفصل الأول – الظلام يغمر الأرض</h1>
+    <div class="logo-text">
+      <span>H</span>&<span>A</span>&<span>M</span>&<span>R</span>
+    </div>
+    <div class="subtitle">روايات أصلية باللغة العربية من تأليف زيريوس الثاني</div>
   </header>
 
-  <div class="nav-link">
-    <a href="almaw3ood.html">⬅️ الرجوع إلى صفحة الرواية</a>
+  <!-- المحتوى -->
+  <div class="container" id="chapter">
+    <h2>الفصل الأول – الظلام يغمر الأرض</h2>
+    <p>
+      كان الفجر يتسلل خجولاً عبر نوافذ الأبراج الشاهقة في نيويورك، لكن ضوءه لم يعد يحمل الأمل كما كان في الماضي...
+      <!-- باقي الفصل هنا -->
+    </p>
   </div>
 
-  <section class="chapter">
-    <p>كان الفجر يتسلل خجولاً عبر نوافذ الأبراج الشاهقة في نيويورك، لكن ضوءه لم يعد يحمل الأمل كما كان في الماضي. العالم قد تغير... تغير كثيراً.</p>
-    <p>وقف الشيخ عبد الرحمن على سطح منزله المتواضع في إحدى ضواحي القاهرة، يراقب طائرات الاستطلاع المسيرة وهي تحوم كالنسور الجائعة فوق المدينة النائمة. شعره الأبيض يرقص مع نسيم الصباح البارد، وعيناه الغائرتان تحملان حزناً عميقاً تراكم عبر عقود من مشاهدة الأمة تنهار قطعة قطعة.</p>
-    <p>"كان زمن النبوة..." همس بصوت مختنق، وكأنه يحدث نفسه أو يحدث السماء التي بدت أكثر بعداً من أي وقت مضى. "ثم جاءت الخلافة على منهاجها... ثم ملك عاضٌ، ثم جبري... والآن؟"</p>
-    <p>توقف للحظة، واستنشق الهواء المحمل برائحة الدخان والخوف.</p>
-    <p>"نحن نعيش آخر الطغيان. آخر الظلم. الأرض تصرخ... والسماء تنتظر."</p>
-    <p>في تلك اللحظة، انطلق صوت الأذان من مسجد بعيد، لكنه كان متقطعاً، مشوشاً، وكأن حتى صوت الأذان يحارب ليصل إلى عباده وسط كل هذا الضجيج والفوضى.</p>
-    <p>التفت الشيخ شرقاً نحو مكة، وسجد على البلاط البارد. دموعه تتساقط بصمت وهو يدعو: "اللهم إن كان الموعد قد حان، فأرنا آياتك، وإن كنا لا نستحق، فارحمنا بفضلك."</p>
-    <p>على بعد آلاف الأميال، في مكة المكرمة، كان رجل في الثلاثينيات من عمره يسير وحيداً في الشارع المؤدي إلى الحرم. ملامحه عادية تماماً، لا يلفت الانتباه، يرتدي ملابس بسيطة، لكن في عينيه شيء غريب... هدوء مرعب، ونور داخلي يبدو وكأنه يشع من أعماق روحه.</p>
-    <p>اسمه محمد بن عبد الله، عامل بسيط من أهل مكة، لم يكن يعلم أن قدره على وشك أن يتغير، وأن التاريخ كله على وشك أن ينعطف عند خطواته.</p>
-    <p>وفي نفس اللحظة، في معبد سري تحت الأرض في أعماق جزيرة مهجورة لا يعلم عنها أحد، كان رجل آخر يفتح عينيه للمرة الأولى منذ عقود. عيناه مختلفتان... إحداهما زرقاء كالثلج، والأخرى عمياء بيضاء كالضباب. ابتسم ابتسامة باردة وهو يرى انعكاس وجهه في الزجاج المحيط به.</p>
-    <p>"أخيراً..." همس بصوت أجش لم يُسمع منذ زمن طويل. "لقد حان الوقت."</p>
-    <p>الأرض كانت تصرخ فعلاً، والسماء كانت تنتظر. وبين الصرخة والانتظار، كانت الملحمة على وشك البداية.</p>
-  </section>
-
-  <div class="nav-link">
-    <a href="almaw3ood.html">⬅️ الرجوع إلى صفحة الرواية</a>
+  <!-- أزرار التحكم -->
+  <div class="nav-buttons">
+    <a href="almaw3ood.html">📚 فهرس الرواية</a>
+    <a href="index.html">🏠 الصفحة الرئيسية</a>
+    <a href="almaw3ood-fasl2.html">🔜 الفصل التالي</a>
+    <button onclick="adjustFontSize(1)">🔎 تكبير الخط</button>
+    <button onclick="adjustFontSize(-1)">🔍 تصغير الخط</button>
   </div>
 
+  <!-- الفوتر -->
   <footer>
     &copy; 2025 Zereos | جميع الحقوق محفوظة
   </footer>
+
+  <!-- سكريبت تكبير الخط -->
+  <script>
+    function adjustFontSize(change) {
+      const el = document.getElementById('chapter');
+      const current = parseFloat(window.getComputedStyle(el).fontSize);
+      el.style.fontSize = (current + change) + 'px';
+    }
+  </script>
 
 </body>
 </html>
