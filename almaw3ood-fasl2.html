@@ -122,6 +122,25 @@
   <footer>
     &copy; 2025 Zereos | جميع الحقوق محفوظة
   </footer>
+<div class="nav-link">
+    <a href="almaw3ood.html">📚 فهرس الرواية</a>
+    <a href="almaw3ood-fasl1.html">🔙 الفصل السابق</a>
+    <!-- لو فيه فصل 3 مستقبلاً -->
+    <!-- <a href="almaw3ood-fasl3.html">🔜 الفصل التالي</a> -->
+    <button onclick="adjustFontSize(1)">🔎 تكبير الخط</button>
+    <button onclick="adjustFontSize(-1)">🔍 تصغير الخط</button>
+  </div>
 
-</body>
+  <footer>
+    &copy; 2025 Zereos | جميع الحقوق محفوظة
+  </footer>
+
+  <script>
+    // تغيير حجم الخط داخل الفصل فقط
+    function adjustFontSize(change) {
+      const chapter = document.querySelector('.chapter');
+      const currentSize = parseFloat(getComputedStyle(chapter).fontSize);
+      chapter.style.fontSize = (currentSize + change) + 'px';
+    }
+  </script></body>
 </html>
