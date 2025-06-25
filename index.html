@@ -1,102 +1,124 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>زيريوس للروايات | Zereos Novels</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H&A&M&R | زيريوس للروايات</title>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
     }
 
     body {
-      font-family: 'Cairo', sans-serif;
-      background: linear-gradient(to bottom, #111, #1a1a1a);
-      color: #fff;
+      background: url('https://images.unsplash.com/photo-1529583051745-3fce5f9b1442') no-repeat center center/cover;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      color: white;
+      background-attachment: fixed;
     }
 
     header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
       text-align: center;
-      padding: 40px 20px 20px;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      border-bottom: 2px solid #f00;
     }
 
-    header h1 {
-      font-size: 3em;
-      color: #00ffd5;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      font-size: 22px;
       margin-bottom: 10px;
     }
 
-    header p {
-      font-size: 1.2em;
-      color: #ccc;
+    .card-content p {
+      font-size: 15px;
+      margin-bottom: 15px;
+      color: #ddd;
     }
 
-    main {
-      text-align: center;
-      padding: 30px 20px;
-    }
-
-    .novel-link {
-      display: block;
-      background-color: #222;
-      color: #00ffd5;
-      padding: 15px 25px;
-      margin: 15px auto;
-      width: 90%;
-      max-width: 500px;
-      border-radius: 12px;
-      font-size: 1.1em;
+    .card-content a {
       text-decoration: none;
-      transition: all 0.3s ease;
+      background: #f00;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      display: inline-block;
+      transition: background 0.3s;
     }
 
-    .novel-link:hover {
-      background-color: #00ffd5;
-      color: #000;
-      transform: translateY(-3px);
-      box-shadow: 0 0 15px #00ffd5;
+    .card-content a:hover {
+      background: #b30000;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #888;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2em;
-      }
-
-      .novel-link {
-        font-size: 1em;
-      }
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.8);
+      font-size: 14px;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
+  <header>H&A&M&R</header>
 
-  <header>
-    <h1>📚 زيريوس للروايات</h1>
-    <p>روايات أصلية باللغة العربية تشمل الرعب، الخيال العلمي، ونهاية العالم.</p>
-  </header>
+  <div class="container">
+    <div class="card">
+      <img src="https://i.imgur.com/l9sF5JL.jpg" alt="الموعود" />
+      <div class="card-content">
+        <h3>رواية: الموعود</h3>
+        <p>رحلة الخوف والنجاة في عالم سقط فيه كل شيء... وظهر فيه الموعود.</p>
+        <a href="almaw3ood.html">ابدأ القراءة</a>
+      </div>
+    </div>
 
-  <main>
-    <a href="almaw3ood.html" class="novel-link">📘 رواية: الموعود</a>
-    <a href="redlight.html" class="novel-link">🔥 رواية: الضوء الأحمر</a>
-  </main>
+    <div class="card">
+      <img src="https://i.imgur.com/Fq5jxEG.jpg" alt="الضوء الأحمر" />
+      <div class="card-content">
+        <h3>رواية: الضوء الأحمر</h3>
+        <p>حين تحوّل الضوء إلى لعنة، وانهار كل شيء، بدأت نهاية العالم.</p>
+        <a href="redlight.html">ابدأ القراءة</a>
+      </div>
+    </div>
+  </div>
 
-  <footer>
-    &copy; 2025 زيريوس الثاني - جميع الحقوق محفوظة
-  </footer>
-
+  <footer>© 2025 H&A&M&R - جميع الحقوق محفوظة</footer>
 </body>
 </html>
