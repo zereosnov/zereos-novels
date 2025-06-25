@@ -1,33 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>زيريوس للروايات</title>
-    <style>
-        body { font-family: 'Arial', sans-serif; background-color: #f8f8f8; margin: 0; padding: 0; color: #333; }
-        header { background-color: #1c1c1c; color: white; padding: 20px; text-align: center; }
-        main { padding: 20px; max-width: 800px; margin: auto; }
-        .novel { background-color: white; padding: 15px; margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        a { text-decoration: none; color: #007BFF; }
-        a:hover { text-decoration: underline; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>زيريوس للروايات | Zereos Novels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to bottom, #111, #1a1a1a);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #00ffd5;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+
+    main {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .novel-link {
+      display: block;
+      background-color: #222;
+      color: #00ffd5;
+      padding: 15px 25px;
+      margin: 15px auto;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 12px;
+      font-size: 1.1em;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .novel-link:hover {
+      background-color: #00ffd5;
+      color: #000;
+      transform: translateY(-3px);
+      box-shadow: 0 0 15px #00ffd5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .novel-link {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>📚 زيريوس للروايات</h1>
-        <p>روايات أصلية باللغة العربية تشمل الرعب، الخيال العلمي، نهاية العالم، والتشويق.</p>
-    </header>
-    <main>
-        <div class="novel">
-            <h2>📘 <a href="almaw3ood.html">رواية: الموعود</a></h2>
-            <p>رحلة الخوف والنجاة في عالم سقط فيه كل شيء... وظهر فيه الموعود.</p>
-        </div>
-        <div class="novel">
-            <h2>🔥 <a href="redlight.html">رواية: الضوء الأحمر</a></h2>
-            <p>بداية العالم الجديد... حين تحوّل الضوء إلى لعنة، وانهار كل شيء.</p>
-        </div>
-    </main>
+
+  <header>
+    <h1>📚 زيريوس للروايات</h1>
+    <p>روايات أصلية باللغة العربية تشمل الرعب، الخيال العلمي، ونهاية العالم.</p>
+  </header>
+
+  <main>
+    <a href="almaw3ood.html" class="novel-link">📘 رواية: الموعود</a>
+    <a href="redlight.html" class="novel-link">🔥 رواية: الضوء الأحمر</a>
+  </main>
+
+  <footer>
+    &copy; 2025 زيريوس الثاني - جميع الحقوق محفوظة
+  </footer>
+
 </body>
 </html>
