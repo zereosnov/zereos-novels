@@ -3,168 +3,203 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>الضوء الأحمر - رواية الخيال المظلم</title>
+  <title>رواية الضوء الأحمر</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #fce4ec;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to bottom, #e3f2fd, #fce4ec);
+      color: #222;
       margin: 0;
       padding: 0;
-      color: #222;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     header {
-      background-color: #b71c1c;
+      background: linear-gradient(to right, #b71c1c, #0d47a1);
       color: white;
-      padding: 30px 20px;
       text-align: center;
+      padding: 20px 0;
     }
 
-    header h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-      color: #ffccbc;
-    }
-
-    .nav-link {
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    .nav-link a {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #b71c1c;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
+    .logo-text {
+      font-size: 32px;
       font-weight: bold;
+      letter-spacing: 6px;
     }
 
-    .nav-link a:hover {
-      background-color: #7f0000;
+    .logo-text span:nth-child(1),
+    .logo-text span:nth-child(3) {
+      color: #f44336;
+    }
+
+    .logo-text span:nth-child(2),
+    .logo-text span:nth-child(4) {
+      color: #2196f3;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: #ddd;
+      margin-top: 6px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     }
 
     .cover {
-      max-width: 400px;
-      margin: 30px auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      border-radius: 10px;
-      overflow: hidden;
+      text-align: center;
+      margin-bottom: 20px;
     }
 
     .cover img {
-      width: 100%;
-      display: block;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 
-    .description {
-      max-width: 800px;
-      margin: 30px auto;
+    .intro {
+      background-color: #fff8f8;
+      border-right: 5px solid #b71c1c;
       padding: 20px;
-      background-color: #ffebee;
-      border-radius: 10px;
-      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      font-size: 18px;
+      line-height: 2;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      white-space: pre-line;
     }
 
-    .description h2 {
-      color: #c62828;
-    }
-
-    .info {
-      margin-top: 20px;
-      font-size: 15px;
-      color: #444;
-    }
-
-    .chapters {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
-      background-color: #ffffff;
-      border: 1px solid #e0e0e0;
-      border-radius: 10px;
-    }
-
-    .chapters h3 {
-      margin-bottom: 20px;
+    h2 {
+      text-align: center;
       color: #b71c1c;
     }
 
-    .chapters ul {
-      list-style: none;
+    .chapter-list {
+      margin: 30px 0;
       padding: 0;
+      list-style: none;
+      text-align: center;
     }
 
-    .chapters li {
-      margin-bottom: 10px;
+    .chapter-list li {
+      margin: 12px 0;
     }
 
-    .chapters a {
-      color: #b71c1c;
+    .chapter-list a {
+      background-color: #1565c0;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 16px;
+      display: inline-block;
     }
 
-    .chapters a:hover {
-      text-decoration: underline;
+    .chapter-list a:hover {
+      background-color: #0d47a1;
+    }
+
+    .controls {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .controls button,
+    .controls a {
+      background-color: #3949ab;
+      color: white;
+      padding: 8px 16px;
+      margin: 5px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    .controls button:hover,
+    .controls a:hover {
+      background-color: #1a237e;
     }
 
     footer {
-      background-color: #880e4f;
-      text-align: center;
+      background-color: #263238;
       color: white;
+      text-align: center;
       padding: 15px;
       font-size: 14px;
-      margin-top: 50px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>🔴 الضوء الأحمر</h1>
-    <p>رواية الخيال العلمي والرعب من تأليف زيريوس الثاني</p>
+    <div class="logo-text">
+      <span>H</span>&<span>A</span>&<span>M</span>&<span>R</span>
+    </div>
+    <div class="subtitle">روايات أصلية باللغة العربية من تأليف زيريوس الثاني</div>
   </header>
 
-  <div class="nav-link">
-    <a href="index.html">⬅️ الرجوع إلى الصفحة الرئيسية</a>
-  </div>
+  <div class="container" id="content">
 
-  <div class="cover">
-    <img src="https://chat.openai.com/cdn-cgi/imagedelivery/KaMPkKhYHtnjNqBtsNdd7w/d2cd6c85-f8a3-45c4-8b29-9a3b2e04e682/public" alt="غلاف رواية الضوء الأحمر">
-  </div>
-
-  <section class="description">
-    <h2>نبذة عن الرواية</h2>
-    <p>
-      في زمن سقط فيه ضوء الشمس، وعمّ الظلام المدن، اجتاح ضوء أحمر السماء وقلوب البشر.  
-      مخلوقات غامضة، أزمات نفسية، وعالم يتحلل ببطء.  
-      إنها بداية عالم جديد... عالم الضوء الأحمر.
-    </p>
-
-    <div class="info">
-      ✍️ الكاتب: زيريوس الثاني<br>
-      🗂️ التصنيف: خيال علمي، رعب، غموض<br>
-      📖 عدد الفصول: 1<br>
-      📅 سنة النشر: 2025
+    <div class="cover">
+      <img src="https://i.ibb.co/xSm4YhZ/redlight-cover.png" alt="غلاف الضوء الأحمر" />
     </div>
-  </section>
 
-  <section class="chapters">
-    <h3>فصول الرواية</h3>
-    <ul>
-      <li><a href="https://ziriusnovels.blogspot.com/2025/06/blog-postredlight1.html" target="_blank">📘 الفصل 1 - الانبعاث</a></li>
+    <h2>🔴 مقدمة الرواية</h2>
+    <div class="intro">
+الدم يتدفق من جرح في راحة يدي، لكنه لا يسقط على الأرض المحروقة. بدلاً من ذلك، يرقص في الهواء أمامي مثل ثعبان أحمر متوهج، يستجيب لإرادتي كما لو كان جزءاً من روحي. أمامي، المخلوق الذي كان يوماً إنساناً يحدق بي بعيون زرقاء متوهجة، لم تعد تحمل الجوع الأعمى الذي اعتدت عليه في الأيام الأولى.
+
+"أنت... مختلف." يقول بصوت أجش، لكنه واضح. هذا المخلوق يتكلم. يفكر.
+
+الواجهة الرقمية الشفافة تطفو أمام عيني:
+
+[المستوى: 47]  
+[القدرة: سيد الدم الأعظم]  
+[التجربة: 892,450/1,000,000]
+
+أبتسم، والدم المتدفق يتشكل إلى شفرات حادة تحوم حولي. "نعم، كلنا مختلفون الآن. السؤال هو... هل أنت عدو أم حليف؟"
+
+منذ خمس سنوات، لم أكن أتخيل أنني سأقف هنا، في ما كان يوماً شارع التحرير، أتحدث مع مخلوق متطور نشأ من رماد الحضارة الإنسانية. منذ خمس سنوات، كنت مجرد خالد، عامل بسيط يكافح من أجل لقمة العيش.
+
+لكن الأرض قررت أن تصحو...
+    </div>
+
+    <h2>📘 فصول الرواية</h2>
+    <ul class="chapter-list">
+      <li><a href="redlight-fasl1.html">📕 الفصل 1 - الضوء الأحمر</a></li>
     </ul>
-  </section>
 
-  <div class="nav-link">
-    <a href="index.html">⬅️ الرجوع إلى الصفحة الرئيسية</a>
+    <div class="controls">
+      <a href="index.html">🏠 الصفحة الرئيسية</a>
+      <button onclick="adjustFontSize(1)">🔎 تكبير الخط</button>
+      <button onclick="adjustFontSize(-1)">🔍 تصغير الخط</button>
+    </div>
+
   </div>
 
   <footer>
     &copy; 2025 Zereos | جميع الحقوق محفوظة
   </footer>
+
+  <script>
+    function adjustFontSize(change) {
+      const el = document.getElementById('content');
+      const current = parseFloat(window.getComputedStyle(el).fontSize);
+      el.style.fontSize = (current + change) + 'px';
+    }
+  </script>
 
 </body>
 </html>
