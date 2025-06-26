@@ -1,3 +1,2 @@
 User-agent: *
 Allow: /
-Sitemap: https://zereos-novels.vercel.app/sitemap.xml
