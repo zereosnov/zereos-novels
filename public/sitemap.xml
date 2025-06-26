@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- الصفحة الرئيسية -->
+  <url>
+    <loc>https://zereos-novels.vercel.app/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- صفحات الروايات -->
+  <url>
+    <loc>https://zereos-novels.vercel.app/almaw3ood.html</loc>
+  </url>
+  <url>
+    <loc>https://zereos-novels.vercel.app/redlight.html</loc>
+  </url>
+
+  <!-- فصول رواية الموعود -->
+  <url>
+    <loc>https://zereos-novels.vercel.app/almaw3ood-fasl1.html</loc>
+  </url>
+  <url>
+    <loc>https://zereos-novels.vercel.app/almaw3ood-fasl2.html</loc>
+  </url>
+
+  <!-- فصول رواية الضوء الأحمر -->
+  <url>
+    <loc>https://zereos-novels.vercel.app/redlight-fasl1.html</loc>
+  </url>
+  <url>
+    <loc>https://zereos-novels.vercel.app/redlight-fasl2.html</loc>
+  </url>
+  <url>
+    <loc>https://zereos-novels.vercel.app/redlight-fasl3.html</loc>
+  </url>
+</urlset>
